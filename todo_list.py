@@ -14,3 +14,8 @@ while goAgain == True:
         if actionType == "add":
             newTask = input("What is the task you would like to add?")
             allTasks.append(newTask)
+        elif actionType == "mark":
+            print(allTasks)
+            n = input("Which number task in the list would you like to mark as completed\n")
+            completedTasks.append(allTasks[n-1])
+        
