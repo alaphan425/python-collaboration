@@ -25,7 +25,7 @@ while goAgain == True:
                     print("There are no tasks to delete.")
                 else:
                     print(allTasks)
-                    k = int(input("Which number in the task list would you like to delete?"))
+                    k = int(input("Which number task in the list would you like to delete?"))
                     deletedTask = allTasks[k-1]
                     if deletedTask in completedTasks:
                         completedTasks.remove(deletedTask)
